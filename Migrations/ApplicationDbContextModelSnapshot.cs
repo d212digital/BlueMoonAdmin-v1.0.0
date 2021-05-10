@@ -74,8 +74,8 @@ namespace BlueMoonAdmin.Migrations
                     b.Property<string>("CurrentMachine")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("LastServiceDate")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("LastServiceDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("OfficeAddress")
                         .HasColumnType("nvarchar(max)");

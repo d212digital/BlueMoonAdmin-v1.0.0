@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace BlueMoonAdmin.Models
@@ -24,7 +25,7 @@ namespace BlueMoonAdmin.Models
         public string ServiceContract { get; set; }
 
         [Display(Name = "Last Service Date")]
-        public string LastServiceDate { get; set; }
+        public DateTime LastServiceDate { get; set; }
 
         [Display(Name = "Current Machine")]
         public string CurrentMachine { get; set; }                  

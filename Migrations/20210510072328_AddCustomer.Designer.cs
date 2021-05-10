@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlueMoonAdmin.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210508182458_AddCustomers")]
-    partial class AddCustomers
+    [Migration("20210510072328_AddCustomer")]
+    partial class AddCustomer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,8 +76,8 @@ namespace BlueMoonAdmin.Migrations
                     b.Property<string>("CurrentMachine")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("LastServiceDate")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("LastServiceDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("OfficeAddress")
                         .HasColumnType("nvarchar(max)");
