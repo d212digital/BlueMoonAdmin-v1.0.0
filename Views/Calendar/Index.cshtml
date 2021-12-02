@@ -11,23 +11,26 @@
     </ol>
 
     @*@if (User.IsInRole(BlueMoonAdmin.Utility.Helper.Admin))
-    {
-        <div class="form-group row col-2 mb-4" id="divEngineersList">
-            <label> Select Engineer </label>
-            @Html.DropDownList("engineerId", new SelectList(ViewBag.EngineerList, "Id", "Name"), new { @class = "form-control select2" })
+        {
+            <div class="form-group row col-2 mb-4" id="divEngineersList">
+                <label> Select Engineer </label>
+                @Html.DropDownList("engineerId", new SelectList(ViewBag.EngineerList, "Id", "Name"), new { @class = "form-control select2" })
 
+            </div>
+        }
+        <div id="servicing-calendar" class="col-12 calendar-app"></div>*@
+   
+        <div class="col-12">
+            <iframe src="https://outlook.office365.com/owa/calendar/c5e4c81260c64671b66d6d1ecdbf6bb6@shrinkwrappingsupplies.co.uk/cf582139bf934c28a1e8d703dabf9b2a5280642400629362122/calendar.html" title="SWS Calendar" height="700" width="1600" frameborder="0"></iframe>
         </div>
-    }
-    <div id="servicing-calendar" class="col-12 calendar-app"></div>*@
-    <iframe src="https://outlook.office365.com/owa/calendar/c5e4c81260c64671b66d6d1ecdbf6bb6@shrinkwrappingsupplies.co.uk/cf582139bf934c28a1e8d703dabf9b2a5280642400629362122/calendar.html" title="SWS Calendar" height="800" width="1628" class="calendar-app"></iframe>
+    
 </div>
-
 <partial name="_AddEditAppointment" />
 
 
 @section styles{
 
-   
+
 }
 
 
